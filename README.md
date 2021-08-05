@@ -1,1 +1,1 @@
-# KataBowling
+# Kata Bowling
