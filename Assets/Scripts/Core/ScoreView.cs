@@ -37,6 +37,9 @@ public class ScoreView : MonoBehaviour
     private void Start()
     {
         _calculateScoreButton.onClick.AddListener(CalculateScore);
+        _throw101.onEndEdit.AddListener(delegate{CheckStrike(_throw101);});
+        _throw102.onEndEdit.AddListener(delegate{CheckSpare(_throw102);});
+
     }
 
     private void CalculateScore()
@@ -48,6 +51,40 @@ public class ScoreView : MonoBehaviour
     }
 
 
+    void CheckStrike(InputField input)
+    {
+        if (input.text.Length > 0) 
+        {
+            if (Int32.Parse(_throw101.text) == 10)
+            {
+                _throw103.interactable = true;
+            }
+            else
+            {
+                _throw103.interactable = false;
+
+            }
+        }
+      
+    }
+    
+    void CheckSpare(InputField input)
+    {
+        if (input.text.Length > 0) 
+        {
+            if ((Int32.Parse(_throw101.text) + Int32.Parse(_throw102.text)) == 10)
+            {
+                _throw103.interactable = true;
+            }
+            else
+            {
+                _throw103.interactable = false;
+
+            }
+        }
+      
+    }
+    
     private List<int> GetListOfThrowsFromUI()
     {
         List<int> listOfThrows = new List<int>();
