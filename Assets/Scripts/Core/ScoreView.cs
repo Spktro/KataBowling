@@ -59,11 +59,7 @@ public class ScoreView : MonoBehaviour
             {
                 _throw103.interactable = true;
             }
-            else
-            {
-                _throw103.interactable = false;
-
-            }
+          
         }
       
     }
@@ -76,11 +72,7 @@ public class ScoreView : MonoBehaviour
             {
                 _throw103.interactable = true;
             }
-            else
-            {
-                _throw103.interactable = false;
-
-            }
+        
         }
       
     }
@@ -108,7 +100,7 @@ public class ScoreView : MonoBehaviour
         listOfThrows.Add(Int32.Parse(_throw92.text)) ;
         listOfThrows.Add(Int32.Parse(_throw101.text)) ;
         listOfThrows.Add(Int32.Parse(_throw102.text)) ;
-    //    listOfThrows.Add(Int32.Parse(_throw103.text)) ;
+        listOfThrows.Add(Int32.Parse(_throw103.text)) ;
         return listOfThrows;
     }
 }

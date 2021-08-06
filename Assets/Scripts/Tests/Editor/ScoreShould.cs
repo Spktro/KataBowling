@@ -30,11 +30,7 @@ namespace BowlingGame.Tests
         public void Setup()
         {
             //Given -  Arrange
-            
-
-
-            
-
+     
         }
 
         [Test]        
@@ -115,6 +111,61 @@ namespace BowlingGame.Tests
 
             // Then - Assert
             Assert.AreEqual(72, score.Points);
+        }
+
+        [Test]
+        public void SumAnExtraThrowWhenStrikeFoundInTheFirstThrowOfLastTurn()
+        {
+            //Given -  Arrange
+            List<int> ListOfThrowsWithStrikes = new List<int>()
+            {
+                3,6,
+                10,0,
+                7,1,
+                4,0,
+                10,0,
+                0,0,
+                4,1,
+                10,0,
+                0,2,
+                10,0,
+                3,5
+            };
+            Score score = new Score();
+            
+            // When - Act 
+            score.AddGame(ListOfThrowsWithStrikes);
+            
+            //Then - Assert
+            Assert.AreEqual(86,score.Points);
+        }
+        
+        
+        [Test]
+        public void SumAnExtraThrowWhenSpareFoundInTheFirstThrowOfLastTurn()
+        {
+            //Given -  Arrange
+            List<int> ListOfThrowsWithSpares = new List<int>()
+            {
+                3,6,
+                10,0,
+                7,1,
+                4,0,
+                10,0,
+                0,0,
+                4,1,
+                10,0,
+                0,2,
+                3,7,
+                8,0
+            };
+            Score score = new Score();
+            
+            // When - Act 
+            score.AddGame(ListOfThrowsWithSpares);
+            
+            //Then - Assert
+            Assert.AreEqual(86,score.Points);
         }
 
     }
