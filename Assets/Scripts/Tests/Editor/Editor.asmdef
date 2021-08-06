@@ -1,9 +1,11 @@
 {
     "name": "Editor",
+    "rootNamespace": "",
     "references": [
         "UnityEngine.TestRunner",
         "UnityEditor.TestRunner",
-        "NewAssembly"
+        "NewAssembly",
+        "UtilsAssembly"
     ],
     "includePlatforms": [
         "Editor"

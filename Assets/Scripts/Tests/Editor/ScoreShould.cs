@@ -5,8 +5,7 @@ using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.TestTools;
 
-namespace BowlingGame.Tests
-{
+
     public class ScoreShould
     {
         // Enunciado Tiradas [20] [21] [22]
@@ -169,4 +168,4 @@ namespace BowlingGame.Tests
         }
 
     }
-}
+

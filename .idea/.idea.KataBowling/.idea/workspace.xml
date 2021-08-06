@@ -1,11 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7c2b9ecc-83f2-4ef9-8562-769ac5dff21d" name="Default Changelist" comment="">
+    <list default="true" id="7c2b9ecc-83f2-4ef9-8562-769ac5dff21d" name="Default Changelist" comment="Included more tests and UI Fix.">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Tests/Editor/UtilsShould.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Tests/Editor/UtilsShould.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Utils.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Utils/Utils.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Utils/Utils.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Utils/UtilsAssembly.asmdef" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Utils/UtilsAssembly.asmdef.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.KataBowling/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.KataBowling/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Score.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Score.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/ScoreView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/ScoreView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tests/Editor/Editor.asmdef" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tests/Editor/Editor.asmdef" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tests/Editor/ScoreShould.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tests/Editor/ScoreShould.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,8 +28,13 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/../KataLifeBarUnity/Assets/Scripts/Core/LifeBarView.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/IL/D9D42CA0-3DE5-4FE1-8A98-98899CCA079D/85/509f259e/02000018pdb.il" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/IL/2ec607060bce409099bb89e01c6ed8ec31200/1f/e7a02866/0200007Epdb.il" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.test-framework@1.1.26/UnityEditor.TestRunner/GUI/Views/EditModeTestListGUI.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Tests/Editor/UtilsShould.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utils/Utils.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../KataLifeBarUnity/Assets/Scripts/Tests/Editor/LifeShould.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/alkim/UnityProjects/KataBowling/Assets/Scripts/Core/Score.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -88,7 +103,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628199176003</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Included more tests and UI Fix.">
+      <created>1628258725305</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1628258725305</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -113,6 +135,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Agregando UI primera parte - Falta considerar caso especial de tiradasd extras en el ultimo turno" />
-    <option name="LAST_COMMIT_MESSAGE" value="Agregando UI primera parte - Falta considerar caso especial de tiradasd extras en el ultimo turno" />
+    <MESSAGE value="Included more tests and UI Fix." />
+    <option name="LAST_COMMIT_MESSAGE" value="Included more tests and UI Fix." />
   </component>
 </project>

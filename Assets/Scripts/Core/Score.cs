@@ -1,11 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Collections.Generic;
 
-namespace BowlingGame
-{
-    public class Score
+  public class Score
     {
+        private const int STANDARD_NUMBER_OF_THROWS = 20;
+        private const int STRIKE_POINTS = 10;
+        private const int SPARE_POINTS = 10;
         public int Points { get; set; }
 
         public Score()
@@ -13,41 +12,30 @@ namespace BowlingGame
             Points = 0;
         }
 
-        public void AddBowlingPins(int bowlingPins)
-        {
-            Points += bowlingPins;
-        }
-
         public void AddGame(List<int> listOfThrows)
         {
-            // caso spare
             for (int i = 0; i < listOfThrows.Count; i += 2)
             {
                 int partialSum = 0;
-                if (i < 20)
+                if (i < STANDARD_NUMBER_OF_THROWS)
                 {
-                    if (listOfThrows[i] == 10)
+                    if (listOfThrows[i] == STRIKE_POINTS)
                     {
                         partialSum = AddStrikePoints(listOfThrows, i);
                     }
                     else
                     {
                         partialSum = listOfThrows[i] + listOfThrows[i + 1];
-                        if (partialSum == 10)
+                        if (partialSum == SPARE_POINTS)
                         {
                             // spare
                             partialSum += listOfThrows[i + 2];
                         }
                     }
                 }
-                
+              
                 Points += partialSum;
             }
-        }
-
-        private void AddStrikePoints2(ref int sum, int p)
-        {
-            sum = sum + p;
         }
 
         private static int AddStrikePoints(List<int> listOfThrows, int i)
@@ -55,4 +43,3 @@ namespace BowlingGame
             return listOfThrows[i] + listOfThrows[i + 2] + listOfThrows[i + 3];
         }
     }
-}
